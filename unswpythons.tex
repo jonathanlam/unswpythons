@@ -1,0 +1,72 @@
+\ProvidesPackage{unswpythons}
+
+% Import some useful packages
+\usepackage{mathtools, amssymb, amsmath, amsthm}
+\usepackage{parskip}
+\usepackage{fancyhdr}
+\usepackage[margin=0.7in]{geometry}
+\usepackage{physics}
+\usepackage{actuarialangle, actuarialsymbol}
+\usepackage{lastpage, cancel}
+\usepackage{tcolorbox}
+\usepackage[utf8]{inputenc}
+
+\renewcommand{\labelitemii}{$\diamond$}
+\usepackage{titlesec}
+\usepackage{titletoc}
+\usepackage{hyperref}
+\usepackage{graphicx}
+\usepackage{tikz}
+\usetikzlibrary{snakes}
+\usepackage{pgfplots}
+\pgfplotsset{compat=1.14}
+\usepgfplotslibrary{fillbetween}
+\graphicspath{ {images/} }
+\usepackage{geometry}
+\usepackage{array}
+
+
+% Shortcuts for maths
+\newcommand\floor[1]{\lfloor#1\rfloor}
+\newcommand\ceil[1]{\lceil#1\rceil}
+
+
+
+% Shortcuts for common environments
+\def\be{\begin{enumerate}}
+\def\ee{\end{enumerate}}
+\def\bi{\begin{itemize}}
+\def\ei{\end{itemize}}
+\def\bc{\begin{center}}
+\def\ec{\end{center}}
+
+
+
+% Redefine var operator
+\let\var\relax
+\DeclareMathOperator{\Var}{Var}
+\DeclareMathOperator{\Cov}{Cov}
+
+% From H113 "Introduction to Abstract Algebra" at UC Berkeley
+\newcommand{\CC}{\mathbb C}
+\newcommand{\FF}{\mathbb F}
+\newcommand{\NN}{\mathbb N}
+\newcommand{\QQ}{\mathbb Q}
+\newcommand{\RR}{\mathbb R}
+\newcommand{\ZZ}{\mathbb Z}
+
+% For complicated fractions
+\newcommand\ddfrac[2]{\frac{\displaystyle #1}{\displaystyle #2}}
+
+
+% Allows us to show/hide example questions. Wrap in \eg{}
+\newcommand{\eg}[1]{
+   \ifnum\showexample=1
+ 
+   #1 \vspace{\baselineskip}
+   \fi
+ 
+   \ifnum\showexample=0
+   \vspace{2\baselineskip} \hspace{2cm}
+   \fi
+}
