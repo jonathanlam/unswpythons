@@ -40,6 +40,15 @@
 \def\bc{\begin{center}}
 \def\ec{\end{center}}
 
+\def\cosec{\mathrm{cosec}}
+\def\LHS{\mathrm{LHS}}
+\def\RHS{\mathrm{RHS}}
+\newcommand{\bunderline}[1]{\underline{\textbf{#1}}}
+\newcommand{\camtitle}[1]{\centerline{\rule[1mm]{25mm}{0.2mm} \textbf{#1} \rule[1mm]{25mm}{0.2mm}}}
+%\newcommand{\eg}{\textbf{Example. }}
+\newcommand{\solution}{\textbf{Solution. }}
+\newcommand{\markz}[1]{\fbox{\textbf{#1}}}
+\def\vc{\overrightarrow}
 
 
 % Redefine var operator
@@ -70,3 +79,18 @@
    \vspace{2\baselineskip} \hspace{2cm}
    \fi
 }
+
+  %Inequalities
+  \newcommand{\cycsum}{\sum_{\mathrm{cyc}}}
+  \newcommand{\symsum}{\sum_{\mathrm{sym}}}
+  \newcommand{\cycprod}{\prod_{\mathrm{cyc}}}
+  \newcommand{\symprod}{\prod_{\mathrm{sym}}}
+
+    %From M275 "Topology" at SJSU
+  \newcommand{\id}{\mathrm{id}}
+  \newcommand{\taking}[1]{\xrightarrow{#1}}
+  \newcommand{\inv}{^{-1}}
+
+
+\usepackage[printwatermark]{xwatermark}
+\newwatermark[pages=1-\lastdocpage,angle=45,scale=4.5,xpos=-10,ypos=0,color=gray!25]{\sffamily NGO \& SONS}
